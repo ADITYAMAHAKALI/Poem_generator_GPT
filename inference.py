@@ -31,5 +31,5 @@ chain = LLMChain(llm=llm, prompt=PROMPT)
 embeddings = OpenAIEmbeddings()
 vectordb = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
 
-print(generate_poems("love",vectordb))
+print(generate_poems("India",vectordb))
 
